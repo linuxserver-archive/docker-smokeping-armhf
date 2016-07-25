@@ -48,7 +48,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ## Setting up the application 
 `IMPORTANT... THIS IS THE ARMHF VERSION`
 
-Once running the URL will be `http://<host-ip>:8080/cgi-bin/smokeping.cgi`.
+Once running the URL will be `http://<host-ip>:8080/smokeping/smokeping.cgi`.
 
 Basics are, edit the Targets file to ping the hosts you're interested in to match the format found there. 
 Wait 10 minutes.
