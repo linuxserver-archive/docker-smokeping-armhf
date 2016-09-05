@@ -11,9 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/smokeping
-[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub]
-[![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub]
-[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
 [hub]: https://hub.docker.com/r/lsioarmhf/smokeping/
 
 Smokeping keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).
@@ -26,13 +24,13 @@ Smokeping keeps track of your network latency. For a full example of what this a
 
 ```
 docker create \
-	--name smokeping \
-	-p 8080:80 \
-	-e PUID=<UID> -e PGID=<GID> \
-	-e TZ=<timezone> \
-	-v <path/to/smokeping/data>:/data \
-	-v <path/to/smokeping/config>:/config \
-	lsioarmhf/smokeping
+       	--name smokeping \
+       	-p 8080:80 \
+       	-e PUID=<UID> -e PGID=<GID> \
+       	-e TZ=<timezone> \
+       	-v <path/to/smokeping/data>:/data \
+       	-v <path/to/smokeping/config>:/config \
+       	lsioarmhf/smokeping
 ```
 
 
@@ -58,12 +56,12 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application 
+## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`
 
 Once running the URL will be `http://<host-ip>:8080/smokeping/smokeping.cgi`.
 
-Basics are, edit the Targets file to ping the hosts you're interested in to match the format found there. 
+Basics are, edit the Targets file to ping the hosts you're interested in to match the format found there.
 Wait 10 minutes.
 
 ## Info
