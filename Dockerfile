@@ -1,4 +1,4 @@
-FROM lsioarmhf/base.alpine
+FROM lsiobase/alpine.armhf
 MAINTAINER LinuxServer.io <ironicbadger@linuxserver.io>, sparklyballs
 
 # install packages

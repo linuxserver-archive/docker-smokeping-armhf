@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/smokeping
-[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
+[![](https://images.microbadger.com/badges/image/lsioarmhf/smokeping.svg)](http://microbadger.com/images/lsioarmhf/smokeping "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
 [hub]: https://hub.docker.com/r/lsioarmhf/smokeping/
 
 Smokeping keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).
@@ -24,13 +24,13 @@ Smokeping keeps track of your network latency. For a full example of what this a
 
 ```
 docker create \
-       	--name smokeping \
-       	-p 8080:80 \
-       	-e PUID=<UID> -e PGID=<GID> \
-       	-e TZ=<timezone> \
-       	-v <path/to/smokeping/data>:/data \
-       	-v <path/to/smokeping/config>:/config \
-       	lsioarmhf/smokeping
+      --name smokeping \
+      -p 8080:80 \
+       -e PUID=<UID> -e PGID=<GID> \
+       -e TZ=<timezone> \
+       -v <path/to/smokeping/data>:/data \
+       -v <path/to/smokeping/config>:/config \
+       lsioarmhf/smokeping
 ```
 
 
@@ -71,5 +71,6 @@ Wait 10 minutes.
 
 **Version**
 
++ **11.09.16:** Add layer badges to README.
 + **05.09.16:** Add badges to README and add curl package.
 + **25.07.16:** First version.
