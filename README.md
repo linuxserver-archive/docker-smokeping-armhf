@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/smokeping
-[![](https://images.microbadger.com/badges/image/lsioarmhf/smokeping.svg)](http://microbadger.com/images/lsioarmhf/smokeping "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/smokeping.svg)](https://microbadger.com/images/lsioarmhf/smokeping "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/smokeping.svg)](http://microbadger.com/images/lsioarmhf/smokeping "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
 [hub]: https://hub.docker.com/r/lsioarmhf/smokeping/
 
 Smokeping keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).
@@ -68,9 +68,18 @@ Wait 10 minutes.
 
 * To monitor the logs of the container in realtime `docker logs -f smokeping`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' smokeping`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/smokeping`
+
 
 **Version**
 
++ **14-10-16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **05.09.16:** Add badges to README and add curl package.
 + **25.07.16:** First version.
