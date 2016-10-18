@@ -85,7 +85,7 @@ Wait 10 minutes.
 **Version**
 
 + **17.10.16:** Add ttf-dejavu package as per [LT forum](http://lime-technology.com/forum/index.php?topic=43602.msg507875#msg507875).
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **05.09.16:** Add badges to README and add curl package.
 + **25.07.16:** First version.
