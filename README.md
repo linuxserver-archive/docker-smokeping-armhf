@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: http://oss.oetiker.ch/smokeping/
+[hub]: https://hub.docker.com/r/lsioarmhf/smokeping/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,13 +14,11 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # lsioarmhf/smokeping
 [![](https://images.microbadger.com/badges/version/lsioarmhf/smokeping.svg)](https://microbadger.com/images/lsioarmhf/smokeping "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/smokeping.svg)](http://microbadger.com/images/lsioarmhf/smokeping "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/smokeping.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/smokeping.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-smokeping)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-smokeping/)
-[hub]: https://hub.docker.com/r/lsioarmhf/smokeping/
 
 Smokeping keeps track of your network latency. For a full example of what this application is capable of visit [UCDavis](http://smokeping.ucdavis.edu/cgi-bin/smokeping.fcgi).
 
 
-[![smokeping](http://oss.oetiker.ch/smokeping/inc/smokeping-logo.png)][smokeurl]
-[smokeurl]: http://oss.oetiker.ch/smokeping/
+[![smokeping](http://oss.oetiker.ch/smokeping/inc/smokeping-logo.png)][appurl]
 
 ## Usage
 
