@@ -82,8 +82,9 @@ Wait 10 minutes.
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/smokeping`
 
 
-**Version**
+**Versions**
 
++ **30.05.17:** Rebase to alpine 3.6.
 + **07.05.17:** Expose smokeping.conf in /config/site-confs to allow user customisations
 + **12.04.17:** Fix cropper.js path, thanks nibbledeez.
 + **09.02.17:** Rebase to alpine 3.5.

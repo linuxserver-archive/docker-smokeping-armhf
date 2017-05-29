@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.5
+FROM lsiobase/alpine.armhf:3.6
 MAINTAINER LinuxServer.io <ironicbadger@linuxserver.io>, sparklyballs
 
 # set version label
@@ -6,7 +6,7 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# install packages
+# install packages
 RUN \
  apk add --no-cache \
 	apache2 \
@@ -17,7 +17,7 @@ RUN \
 	sudo \
 	ttf-dejavu && \
 
-# give abc sudo access to traceroute
+# give abc sudo access to traceroute
  echo "abc ALL=(ALL) NOPASSWD: /usr/bin/traceroute" >> /etc/sudoers.d/traceroute && \
 
 # fix path to cropper.js
