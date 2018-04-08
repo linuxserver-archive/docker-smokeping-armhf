@@ -84,6 +84,7 @@ Wait 10 minutes.
 
 **Versions**
 
++ **08.04.18:** Add tccping script and tcptraceroute package (thanks rcarmo).
 + **26.01.18:** Rebase to alpine 3.7, expose httpd.conf.
 + **30.05.17:** Rebase to alpine 3.6.
 + **07.05.17:** Expose smokeping.conf in /config/site-confs to allow user customisations
